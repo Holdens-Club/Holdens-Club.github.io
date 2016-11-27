@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Site made by Bharath Hegde for a school LA project -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Quizzes</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  
+</head>
+<body>
+  <header>
+      <nav class="top-nav" style="background-color:#c62828">
+        <div class="container">
+          <div class="nav-wrapper">
+			  <a href="#" data-activates="slide-out" class="page-title button-collapse show-on-large"><i class="material-icons">menu</i></a>
+			  <a href="#" class="brand-logo center">Holden's Club - Quizzes</a> <a href="#" class="brand-logo right" style="font-size:12px">by Bharath Hegde</a>
+			  <ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><- Click for Navigation</li>
+	
+			  </ul>
+		  </div>
+        </div>
+		
+      </nav>
+	  
+		<ul id="slide-out" class="side-nav" >
+			<li><div class="userView">
+			  <div class="background">
+				<img src="../../img/navbarBG.jpg">
+			  </div>
+			  <br></br>
+			   <br></br> 
+			</div></li>
+			<li><a style="text-color:#000000;pointer-events: none">Navigation</a></li>
+			<li><a class="subheader">Scroll down to see all pages!</a></li>
+			<li><div class="divider"></div></li>
+			<li><a href="../../index.html"><i class="material-icons">info_outline</i>Home</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Background Info</a></li>
+			<li><a class="waves-effect" href="../../content/bg/background.html"><i class="material-icons">web</i>Background Information</a></li>
+			<li><a class="waves-effect" href="../../content/bg/plot.html"><i class="material-icons">trending_up</i>Story Plot</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Main Content</a></li>
+			<li><a class="waves-effect" href="../../content/main/characters.html"><i class="material-icons">supervisor_account</i>Characters</a></li>
+			<li><a class="waves-effect" href="../../content/main/themes.html"><i class="material-icons">chat_bubble_outline</i>Themes</a></li>
+			<li><a class="waves-effect" href="../../content/main/symbols.html"><i class="material-icons">album</i>Symbols</a></li>
+			<li><a class="waves-effect" href="../../content/main/motifs.html"><i class="material-icons">smoking_rooms</i>Motifs</a></li>
+			<li><a class="waves-effect" href="../../content/main/bildungsroman.html"><i class="material-icons">accessibility</i>Purpose: Bildungsroman</a></li>
+			<li><a class="waves-effect" href="../../content/main/socialcritique.html"><i class="material-icons">record_voice_over</i>Purpose: Social Critique</a></li>
+			<li><a class="waves-effect" href="../../content/main/unreliablenarrator.html"><i class="material-icons">report_problem</i>Unreliable Narrator</a></li>
+			<li><a class="waves-effect" href="../../content/main/tone.html"><i class="material-icons">hearing</i>Tone</a></li>
+			<li><a class="waves-effect" href="../../content/main/diction.html"><i class="material-icons">message</i>Diction</a></li>
+			<li><a class="waves-effect" href="../../content/main/grief.html"><i class="material-icons">mood_bad</i>Coping with Grief/Loss</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Extras</a></li>
+			<li class="active"><a class="waves-effect" href="#"><i class="material-icons">assignment</i>Interactive Quizzes</a></li>
+			<li><a class="waves-effect" href="../../content/extra/forum.html"><i class="material-icons">forum</i>Discussion Board</a></li>
+			<li><a class="waves-effect" href="../../content/extra/external.html"><i class="material-icons">language</i>Other Catcher Websites</a></li>
+		
+	  </ul>
+	  
+     
+    </header>
+	<main>
+		<div class="container">
+			<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+			  <br><br>
+			  <h1 class="header center black-text">Interactive Quizzes</h1>
+			 
+              <p class="light" style="font-size:18px">We only made one quiz for now, but more may be added in the future.</p>
+
+			</div>
+		</div>
+		</div>
+  
+
+<br><br>
+  <div class="container">
+    <div class="row">
+
+
+			
+
+			  <!-- Modal Structure -->
+			  <div id="gradeModal" class="modal">
+			    <div class="modal-content">
+			      <h4>General Quiz Grade</h4>
+			      <p id="label_grade" style="font-size:26px">0/15 Correct</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+			    </div>
+			  </div>
+
+
+        <div class="col s12 m12">
+         
+		<h2>General Quiz</h4>       
+		<form id="generalquizform">
+			<p class="light" style="font-size:18px">When was <i>The Catcher in the Rye</i> published?</p>
+		    <p>
+		      <input name="question1" type="radio" id="q11" value="1" />
+		      <label for="q11">1951</label>
+		    </p>
+		    <p>
+		      <input name="question1" type="radio" id="q12" value="2" />
+		      <label for="q12">1935</label>
+		    </p>
+		    <p>
+		      <input name="question1" type="radio" id="q13" value="3"  />
+		      <label for="q13">1926</label>
+		    </p>
+		      <p>
+		        <input name="question1" type="radio" id="q14" value="4" />
+		        <label for="q14">1978</label>
+		    </p>
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which quote best demonstrates Holden's hypocritical/contradictory nature?</p>
+		    <p>
+		      <input name="question2" type="radio" id="q21" value="1" />
+		      <label for="q21">“I was only thirteen, and they were going to have me psychoanalyzed and all, because I broke all the windows in the garage. I don't blame them. I really don't. I slept in the garage the night he died, and I broke all the goddam windows with my fist, just for the hell of it. I even tried to break all the windows on the station wagon we had that summer…” (Salinger 39).</label>
+		    </p>
+		    <p>
+		      <input name="question2" type="radio" id="q22" value="2" />
+		      <label for="q22">"What I did, I started talking, sort of out loud, to Allie. I do that sometimes when I get very depressed. I keep telling him to go home and get his bike and meet me in front of Bobby Fallon's house…" (Salinger 98)</label>
+		    </p>
+		    <p>
+		      <input name="question2" type="radio" id="q23" value="3"  />
+		      <label for="q23">"I had quite a bit of time to kill till ten o'clock, so what I did, I went to the movies at Radio City. It was probably the worst thing I could've done, but it was near, and I couldn't think of anything else." (Salinger 137)</label>
+		    </p>
+		      <p>
+		        <input name="question2" type="radio" id="q24" value="4" />
+		        <label for="q24">"He put my goddam paper down then and looked at me like he'd just beaten hell out of me in ping-pong or something. I don't think I'll ever forgive him for reading me that crap out loud. I wouldn't've read it out loud to him if he'd written it--I really wouldn't. In the first place, I'd only written that damn note so that he wouldn't feel too bad about flunking me" (Salinger 12)</label>
+		    </p>
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">What does Holden say about money?</p>
+		    <p>
+		      <input name="question3" type="radio" id="q31" value="1" />
+		      <label for="q31">It makes people happy</label>
+		    </p>
+		    <p>
+		      <input name="question3" type="radio" id="q32" value="2" />
+		      <label for="q32">It always ends up making people sad</label>
+		    </p>
+		    <p>
+		      <input name="question3" type="radio" id="q33" value="3"  />
+		      <label for="q33">It's hard to earn</label>
+		    </p>
+		      <p>
+		        <input name="question3" type="radio" id="q34" value="4" />
+		        <label for="q34">It's useless</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">What kind of diction is used in the book out of these choices?</p>
+		    <p>
+		      <input name="question4" type="radio" id="q41" value="1" />
+		      <label for="q41">Colloquial</label>
+		    </p>
+		    <p>
+		      <input name="question4" type="radio" id="q42" value="2" />
+		      <label for="q42">Formal</label>
+		    </p>
+		    <p>
+		      <input name="question4" type="radio" id="q43" value="3"  />
+		      <label for="q43">Informal</label>
+		    </p>
+		      <p>
+		        <input name="question4" type="radio" id="q44" value="4" />
+		        <label for="q44">Both Colloquial and Informal</label>
+		    </p>
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which quote out of these shows Holden's desire to preserve innocence and childhood?</p>
+		    <p>
+		      <input name="question5" type="radio" id="q51" value="1" />
+		      <label for="q51">"'Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. Thousands of little kids, and nobody's around--nobody big, I mean--except me. And I'm standing on the edge of some crazy cliff. What I have to do, I have to catch everybody if they start to go over the cliff--I mean if they're running and they don't look where they're going I have to come out from somewhere and catch them. That's all I'd do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be. I know it's crazy.'" (Salinger 173)</label>
+		    </p>
+		    <p>
+		      <input name="question5" type="radio" id="q52" value="2" />
+		      <label for="q52">"'I got my damn bags at the station,' I said. 'Listen. You got any dough, Phoeb? I'm practically broke.'... She put the dough in my hand... Then, all of a sudden, I started to cry. I couldn't help it. I did it so nobody could hear me, but I did it... Then I took my hunting hat out of my coat pocket and gave it to her. She likes those kind of crazy hats. She didn't want to take it, but I made her. I'll bet she slept with it on. She really likes those kind of hats." (Salinger 178-180)</label>
+		    </p>
+		    <p>
+		      <input name="question5" type="radio" id="q53" value="3"  />
+		      <label for="q53">"Then the carrousel started, and I watched her go around and around... All the kids kept trying to grab for the gold ring, and so was old Phoebe, and I was sort of afraid she'd fall off the goddam horse, but I didn't say anything or do anything. The thing with kids is, if they want to grab the gold ring, you have to let them do it, and not say anything. If they fall off they fall off, but it's bad if you say anything to them." (Salinger 211)</label>
+		    </p>
+		      <p>
+		      <input name="question5" type="radio" id="q54" value="4" />
+		      <label for="q54">"'Life is a game, boy. Life is a game that one plays according to the rules.' 'Yes, sir. I know it is. I know it.' Game, my ass. Some game. If you get on the side where all the hot-shots are, then it's a game, all right--I'll admit that. But if you get on the other side, where there aren't any hot-shots, then what's a game about it? Nothing. No game." (Salinger 8)</label>
+		    </p>
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which choice best describes Holden as a narrator?</p>
+		    <p>
+		      <input name="question6" type="radio" id="q61" value="1" />
+		      <label for="q61">Objective and straight to the point, no digressions</label>
+		    </p>
+		    <p>
+		      <input name="question6" type="radio" id="q62" value="2" />
+		      <label for="q62">Unreliable, biased, and digresses frequently</label>
+		    </p>
+		    <p>
+		      <input name="question6" type="radio" id="q63" value="3"  />
+		      <label for="q63">Holden is not the narrator of the book</label>
+		    </p>
+		      <p>
+		      <input name="question6" type="radio" id="q64" value="4" />
+		      <label for="q64">Both objective and unreliable, it varies</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which quote shows Holden's denial towards Allie's death?</p>
+		    <p>
+		      <input name="question7" type="radio" id="q71" value="1" />
+		      <label for="q71">"I was only thirteen, and they were going to have me psychoanalyzed and all, because I broke all the windows in the garage. I don't blame them. I really don't. I slept in the garage the night he died, and I broke all the goddam windows with my fist, just for the hell of it. I even tried to break all the windows on the station wagon we had that summer…" (Salinger 39)</label>
+		    </p>
+		    <p>
+		      <input name="question7" type="radio" id="q72" value="2" />
+		      <label for="q72">"When I finally got down off the radiator and went out to the hat-check room, I was crying and all. I don't know why, but I was. I guess it was because I was feeling so damn depressed and lonesome" (Salinger 153)</label>
+		    </p>
+		    <p>
+		      <input name="question7" type="radio" id="q73" value="3"  />
+		      <label for="q73">"I still had that headache. It was even worse. And I think I was more depressed than I ever was in my whole life." (Salinger 194)</label>
+		    </p>
+		      <p>
+		      <input name="question7" type="radio" id="q74" value="4" />
+		      <label for="q74">"What I did, I started talking, sort of out loud, to Allie. I do that sometimes when I get very depressed. I keep telling him to go home and get his bike and meet me in front of Bobby Fallon's house…" (Salinger 98)</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which of these choices could be the symbolic meaning of the "Little Shirley Beans" record shattering?</p>
+		    <p>
+		      <input name="question8" type="radio" id="q81" value="1" />
+		      <label for="q81">Holden losing his grasp on his childhood and starting to grow up</label>
+		    </p>
+		    <p>
+		      <input name="question8" type="radio" id="q82" value="2" />
+		      <label for="q82">The record shattering has no significance</label>
+		    </p>
+		    <p>
+		      <input name="question8" type="radio" id="q83" value="3"  />
+		      <label for="q83">Phoebe's life falling apart</label>
+		    </p>
+		      <p>
+		      <input name="question8" type="radio" id="q84" value="4" />
+		      <label for="q84">Society breaking down</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Where is Holden telling this story from and how did he get in that situation?</p>
+		    <p>
+		      <input name="question9" type="radio" id="q91" value="1" />
+		      <label for="q91">He's telling the story in present tense as it happens</label>
+		    </p>
+		    <p>
+		      <input name="question9" type="radio" id="q92" value="2" />
+		      <label for="q92">He's telling this story for a school project</label>
+		    </p>
+		    <p>
+		      <input name="question9" type="radio" id="q93" value="3"  />
+		      <label for="q93">Some kind of mental institution or a place with a psychoanalyst on hand. He got there because he had some kind of a breakdown.</label>
+		    </p>
+		      <p>
+		      <input name="question9" type="radio" id="q94" value="4" />
+		      <label for="q94">He's telling it from prison because he committed fraud</label>
+		    </p>
+
+
+		     <br>
+		    <p class="light" style="font-size:18px">Pick the best answer: what's one thing about Holden that today's youth can identify with him for?</p>
+		    <p>
+		      <input name="question10" type="radio" id="q101" value="1" />
+		      <label for="q101">His constant smoking and drinking</label>
+		    </p>
+		    <p>
+		      <input name="question10" type="radio" id="q102" value="2" />
+		      <label for="q102">His cursing, value of individualism, and independence</label>
+		    </p>
+		    <p>
+		      <input name="question10" type="radio" id="q103" value="3"  />
+		      <label for="q103">His overly positive attitude</label>
+		    </p>
+		      <p>
+		      <input name="question10" type="radio" id="q104" value="4" />
+		      <label for="q104">His care for everyone around him</label>
+		    </p>
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which of these choices is something that Holden's red hunting hat probably DOES NOT represent?</p>
+		    <p>
+		      <input name="question11" type="radio" id="q111" value="1" />
+		      <label for="q111">His resistance to growing up and grasp on his childhood</label>
+		    </p>
+		    <p>
+		      <input name="question11" type="radio" id="q112" value="2" />
+		      <label for="q112">His criticizing nature</label>
+		    </p>
+		    <p>
+		      <input name="question11" type="radio" id="q113" value="3"  />
+		      <label for="q113">His need for acceptance by others and conformity</label>
+		    </p>
+		      <p>
+		      <input name="question11" type="radio" id="q114" value="4" />
+		      <label for="q114">His respect for society and its people</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which of these quotes is a criticism involving perception vs. reality?</p>
+		    <p>
+		      <input name="question12" type="radio" id="q121" value="1" />
+		      <label for="q121">"He just kept talking about Life being a game and all. You know. 'Life is a game, boy. Life is a game that one plays according to the rules.' 'Yes, sir. I know it is. I know it.' Game, my ass. Some game. If you get on the side where all the hot-shots are, then it's a game, all right--I'll admit that. But if you get on the other side, where there aren't any hot-shots, then what's a game about it? Nothing. No game." (Salinger 8)</label>
+		    </p>
+		    <p>
+		      <input name="question12" type="radio" id="q122" value="2" />
+		      <label for="q122">“But the worst part was that you could tell they all wanted to go to the movies. I couldn't stand looking at them. I can understand somebody going to the movies because there's nothing else to do, but when somebody really wants to go, and even walks fast so as to get there quicker, then it depresses hell out of me. Especially if I see millions of people standing in one of those long, terrible lines, all the way down the block, waiting with this terrific patience for seats and all” (Salinger 116)</label>
+		    </p>
+		    <p>
+		      <input name="question12" type="radio" id="q123" value="3"  />
+		      <label for="q123">“Stradlater was more of a secret slob. He always looked all right, Stradlater, but for instance, you should've seen the razor he shaved himself with. It was always rusty as hell and full of lather and hairs and crap. He never cleaned it or anything. He always looked good when he was finished fixing himself up, but he was a secret slob anyway, if you knew him the way I did” (Salinger 27).</label>
+		    </p>
+		      <p>
+		      <input name="question12" type="radio" id="q124" value="4" />
+		      <label for="q124">"Then I tried to get them in a little intelligent conversation, but it was practically impossible. You had to twist their arms. You could hardly tell which was the stupidest of the three of them. And the whole three of them kept looking all around the goddam room, like as if they expected a flock of goddam movie stars to come in any minute. (Salinger 73)</label>
+		    </p>
+
+
+
+		     <br>
+		    <p class="light" style="font-size:18px">Pick the best answer: Which of these is a trait of Phoebe?</p>
+		    <p>
+		      <input name="question13" type="radio" id="q131" value="1" />
+		      <label for="q131">She recognizes that growing up is necessary unlike Holden</label>
+		    </p>
+		    <p>
+		      <input name="question13" type="radio" id="q132" value="2" />
+		      <label for="q132">Holden despises her</label>
+		    </p>
+		    <p>
+		      <input name="question13" type="radio" id="q133" value="3"  />
+		      <label for="q133">She is immature and negative about everything the way Holden is</label>
+		    </p>
+		      <p>
+		      <input name="question13" type="radio" id="q134" value="4" />
+		      <label for="q134">She has a hard time talking to and understanding Holden. Holden can't confide in her.</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Which one of these girls does Holden respect for not being a phony?</p>
+		    <p>
+		      <input name="question14" type="radio" id="q141" value="1" />
+		      <label for="q141">Sally Hayes</label>
+		    </p>
+		    <p>
+		      <input name="question14" type="radio" id="q142" value="2" />
+		      <label for="q142">Jane Gallagher</label>
+		    </p>
+		    <p>
+		      <input name="question14" type="radio" id="q143" value="3"  />
+		      <label for="q143">Lillian Simmons</label>
+		    </p>
+		      <p>
+		      <input name="question14" type="radio" id="q144" value="4" />
+		      <label for="q144">The 3 women from the Lavender Room</label>
+		    </p>
+
+
+
+		    <br>
+		    <p class="light" style="font-size:18px">Pick the best answer that describes Holden's views on Stradlater and Ackley:</p>
+		    <p>
+		      <input name="question15" type="radio" id="q151" value="1" />
+		      <label for="q151">Holden respects and obeys Stradlater and thinks he's a great person. Holden despises Ackley for his disgusting behavior.</label>
+		    </p>
+		    <p>
+		      <input name="question15" type="radio" id="q152" value="2" />
+		      <label for="q152">Holden respects both Stradlater and Ackley completely</label>
+		    </p>
+		    <p>
+		      <input name="question15" type="radio" id="q153" value="3"  />
+		      <label for="q153">Holden doesn't like Stradlater for his nasty habits, but respects and praises Ackley for his handsomeness and cleanliness.</label>
+		    </p>
+		      <p>
+		      <input name="question15" type="radio" id="q154" value="4" />
+		      <label for="q154">Holden recognizes Stradlater's sexual experience and handsomeness, but doesn't like him for being phony, stupid, having hidden dirty habits, and for possibly having sex with Jane. Holden doesn't like Ackley for his disgusting behavior and personality, but can respect that he is true to himself, doesn't care what others think of him, and has a strong sense of identity.</label>
+		    </p>
+
+
+		    <br>
+			
+		  </form>
+
+		  <button class="btn waves-effect waves-light" onclick="gradeGeneralAnswers()">Grade My Answers
+			    <i class="material-icons right">send</i>
+			  </button>		    
+			  <button class="btn waves-effect waves-light" onclick="document.getElementById('generalquizform').reset()">Clear my answers
+			    <i class="material-icons right">cached</i>
+			  </button>	
+      	</div>
+
+ 
+ 	 </div>
+      
+  </div>
+  
+  </main>
+
+  <footer class="page-footer grey">
+   <!-- <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>-->
+    <div class="footer-copyright">
+      <div class="container">
+      Website made by <a class="white-text text-lighten-3" href="https://plus.google.com/u/0/103265955511152021404">Bharath Hegde</a> for a school LA project
+      </div>
+    </div> 
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../js/materialize.js"></script>
+  <script src="../../js/init.js"></script>
+  <script>
+	$(".button-collapse").sideNav();
+	$('#index_getStartedButton').click(function(){ $(".button-collapse").sideNav('show'); return false; });
+
+	$(document).ready(function(){
+	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	    $('.modal').modal();
+	  });
+	//Nice job cheater
+	var answers	= ["1", "3", "2", "4", "1", "2", "4", "1", "3", "2", "4", "3", "1", "2", "4"];
+
+	function gradeGeneralAnswers()
+	{
+		var correctAnswers = 0;
+		var totalAnswers = answers.length;
+		for (var i = 0; i < totalAnswers; i++) { 
+		    
+		    var correctAnswer = answers[i];
+		    var userAnswer = $('input[name=question' + (i+1) + ']:checked').val();
+			
+			correctAnswers += (correctAnswer === userAnswer) ? 1 : 0;
+
+		}
+
+		
+		$('#gradeModal').modal('open');
+		console.log(correctAnswers);
+		$("#label_grade").text(correctAnswers + '/' + totalAnswers + ' Correct (' + (correctAnswers/totalAnswers * 100) + '%)');
+
+	}
+  </script>
+
+  </body>
+</html>
